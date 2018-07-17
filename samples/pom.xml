@@ -472,6 +472,12 @@
                         <artifactId>${sap.cloud.sdk.plugin}</artifactId>
                         <executions>
                             <execution>
+                             <phase>initialize</phase>
+                            <goals>
+                                <goal>install-sdk</goal>
+                                    </goals>
+                                </execution>
+                            <execution>
                                 <id>install-local-server</id>
                                 <phase>pre-integration-test</phase>
                                 <goals>
